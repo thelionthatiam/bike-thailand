@@ -1,0 +1,160 @@
+<div class="column siteWrapper">
+  <div class="box siteTitleWrapper">
+    <div class="box circle none">
+      <div class="column aboutText">
+        <p>
+          In 2016 two American travelers, Makie and Julian, wanted to cycle through another country. Quickly they brainstormed some prerequisites: paved roads, accessible lodging and food, minimal hostility, topographical variation and cultural intrigue. Thailand bubbled forth as an ideal country. With minimal experience, they blundered through flights, vaccinations, language, food, cycling and expenses — so you don't have to. Explore some their articles to help decide whether you want to go and, if you do, how to have your own adventure.
+        </p>
+      </div>
+      <button class="about">close</button>
+    </div>
+    <div class="row siteTitle">
+      <h2>Bike Thailand</h2>
+    </div>
+    <div class ="row siteSubtitle">
+        <p>A practical guide for cycling Thailand</p>
+        <p class="about">About</p>
+    </div>
+  </div>
+  <div class="column searchWrapper">
+    <form action='/search-test' method="post">
+    <div class="row">
+        <input id="search" name="search" class="userFormItem dropdownSearch" type="text" placeholder="search for a topic"/>
+        <button class="searchButton" type="submit">go</button>
+    </div>
+    <div class="dropdownWrapper none">
+      <ul class="dropdownList"></ul>
+    </div>
+    </form>
+    <p>
+      {{error}}
+    </p>
+  </div>
+  <div class= "categoryListWrapper">
+    <div class="column categoryWrapper">
+      <div class="row categoryTitle">
+        <h4>Gear</h4>
+        <p>
+          {{gear}}
+        </p>
+        <img src="http://www.freeiconspng.com/uploads/gears-icon-png-11.png">
+      </div>
+      <div class="box subCategoryWrapper none">
+        <div class="row subCategoryTitle">
+          <h6>Bags</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Bicylces</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Weight</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Clothes</h6>
+        </div>
+      </div>
+    </div>
+    <div class="column categoryWrapper">
+      <div class="row categoryTitle">
+        <h4>Daily</h4>
+        <p>
+          {{daily}}
+        </p>
+        <img src="https://cdn4.iconfinder.com/data/icons/stroke-weather-and-forecast/64/weather_sun_sunny_day-512.png">
+      </div>
+      <div class="box subCategoryWrapper none">
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+      </div>
+
+    </div>
+    <div id="random" class="column categoryWrapper">
+      <div class="row categoryTitle">
+        <h4>Riding</h4>
+        <p>
+            {{riding}}
+        </p>
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/108877-200.png">
+      </div>
+      <div class="box subCategoryWrapper none">
+        <div class="row subCategoryTitle">
+          <h6>Locking your bicycle</h6>
+        </div>
+        <div class="column article none">
+          <p>Whenever we locked our bicycles, we were often given weird looks or uproariously laughed at. From a local Thai perspective...</p>
+          <form action="/article-test" method="get">
+            <button class="readOn">read on</button>
+          </form>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+      </div>
+    </div>
+    <div class="column categoryWrapper">
+      <div class="row categoryTitle">
+        <h4>Expenses</h4>
+        <p>
+          {{ expenses }}
+        </p>
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/22910-200.png">
+      </div>
+      <div class="box subCategoryWrapper none">
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="row subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+      </div>
+    </div>
+    {{!-- <div class="column categoryWrapper">
+      <div class="row categoryTitle">
+        <h4>Maps</h4>
+        <img src="http://simpleicon.com/wp-content/uploads/map-8.png">
+      </div>
+      <div class="box subCategoryWrapper none ">
+        <div class="column subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="categoryImgWrapper">
+          <img class="categoryImg" src="http://juliantheberge.com/Bike%20Thailand%20Test%20Img/FAV11650%20Middle%20of%20Nowhere.JPG"/>
+        </div>
+        <div class="column subCategoryTitle">
+          <h6>Subcategory One</h6>
+        </div>
+        <div class="categoryImgWrapper">
+          <img class="categoryImg" src="http://juliantheberge.com/Bike%20Thailand%20Test%20Img/FAV12853%20Southern%20Thailand.JPG"/>
+        </div>
+        <div class="column subCategoryTitle">
+          <h6>Subcategory One</h6>
+          <img src="http://watchdog.org/wp-content/blogs.dir/1/files/2015/03/Jeannette-Google-Maps-screenshot.png">
+        </div>
+      </div>
+    </div> --}}
+  </div>
+</div>
+<script src="/behavior/menu-shuffle.js"></script>
+<script src="/behavior/search-bar.js"></script>

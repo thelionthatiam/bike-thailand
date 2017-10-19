@@ -1,0 +1,163 @@
+/*----------------------TESTING STUFF-------------------*/
+/* * {
+  border:.5px solid grey;
+} */
+.red {
+	background-color:red;
+}
+.green {
+	background-color:green;
+}
+
+/*-----------------------GENERAL STUFF------------------*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+button {
+  border: none;
+  color:white;
+  background-color:#344c4c;
+  font-weight:500;
+  font-size:12px;
+  border-radius:5px;
+	box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+	align-self: center;
+}
+
+button:focus {
+  outline:0;
+}
+
+input {
+	border: none;
+	padding:2px;
+	color: white;
+	font-size:12px;
+  background-color:#344c4c;
+  font-size:12px;
+  border-radius:2px;
+}
+
+input:focus {
+	outline:0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	padding:2px;
+  color: white;
+	font-size:12px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	padding:2px;
+  color: white;
+	font-size:12px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	padding:2px;
+  color: white;
+	font-size:12px;
+}
+:-moz-placeholder { /* Firefox 18- */
+	padding:2px;
+  color: white;
+	font-size:12px;
+}
+
+.column {
+  display:flex;
+  flex-direction:column;
+}
+
+.row {
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+}
+
+.box {
+  display:flex;
+  flex-direction:column;
+}
+
+.none {
+  display:none;
+}
+/*----------------------------FONTS---------------------------*/
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family:"roboto", "arial";
+  transform:none;
+  padding:0;
+  margin:0;
+  color:#2a3030;
+  font-weight:300;
+}
+
+h2 {
+  font-weight:600;
+}
+
+p, li, a {
+  font-size:12px;
+  margin-bottom-10px;
+}
+
+ul {
+  list-style:none;
+  padding:10px;
+}
+
+a {
+  color:blue;
+  font-weight:500;
+  text-decoration:none;
+}
+
+.siteWrapper {
+  min-height:100vh;
+  background-color:#dbd960;
+  min-width:300px;
+
+}
+
+/*----------------------------FONTS---------------------------*/
+.article {
+  padding:0px 25px 25px 25px;
+  background-color:#fffec1;
+}
+
+.article > p {
+  font-size:15px;
+  padding:5px 0px 5px 0px;
+}

@@ -189,10 +189,7 @@ a {
   cursor:pointer;
 }
 
-
 .circle {
-  background-color:black;
-  opacity:0;
   transition:all 200ms;
   height:10vw;
   width:10vw;
@@ -207,7 +204,7 @@ a {
   width:120vw;
   z-index:1;
   margin-right:-30vw;
-  opacity:0.9;
+  opacity:1;
 	transition:200ms;
 	box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.08);
 }

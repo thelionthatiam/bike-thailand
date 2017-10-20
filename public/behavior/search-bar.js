@@ -46,9 +46,6 @@ $('.dropdownList').on('click', '.dropdownItem', function() {
   $('.dropdownWrapper').addClass('none');
 });
 
-
-
-
 //elements to clear upon window click
 $(document).click(function(){
  $('.dropdownList').empty();

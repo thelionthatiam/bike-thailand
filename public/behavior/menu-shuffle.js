@@ -15,13 +15,28 @@ function slideDownNext(selected, highlightedClass, highlight) {
 	next.addClass(highlight).slideDown();
 }
 
+function squish() {
+	$('.titleImg').addClass('smallTitleImg');
+	$('.photoSlider').addClass('smallPhotoSlider');
+
+}
+
+function unsquish(){
+	$('.titleImg').removeClass('smallTitleImg');
+	$('.photoSlider').removeClass('smallPhotoSlider');
+}
+
 function oneOpen(selected, highlightedClass, highlight) {
 	if (selected.next().hasClass(highlight)) {
 		$(highlightedClass).slideUp().removeClass(highlight);
 		selected.next().removeClass(highlight);
+
+		unsquish();
 	} else {
 		$(highlightedClass).slideUp().removeClass(highlight);
 		slideDownNext(selected, highlightedClass, highlight);
+
+		squish();
 	}
 }
 
@@ -49,3 +64,7 @@ article.click(function() {
 
 /*---------------about stuff---------------------*/
 var about = $('.about')
+
+about.click(function() {
+	$('.circle').toggleClass('none').toggleClass('openAbout');
+})

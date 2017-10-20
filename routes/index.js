@@ -21,15 +21,11 @@ router.post('/search-test', function(req,res,next) {
     res.render(thisPage, {riding:"try looking in this topic"});
   } else if (input === 'expenses'){
     res.render(thisPage, {expenses:"try looking in this topic"});
-  }
-
-  if (input === 'locking') {
+  } else if (input === 'locking') {
     res.render(input);
   } else {
-    res.render(thisPage, { error:"Sorry, we couldn't figure out where to take you. Search manually?"});
+    res.render(thisPage, { error:"Sorry, we couldn't figure out where to take you. Try diggin around."});
   }
-
-
 })
 
 

@@ -1,4 +1,4 @@
-/*----------------------TESTING STUFF-------------------*/
+/*----------------------TESTING STUFF & Javascript Stuff-------------------*/
 /* * {
   border:.5px solid grey;
 } */
@@ -8,6 +8,7 @@
 .green {
 	/*background-color:green;*/
 }
+
 
 /*-----------------------GENERAL STUFF------------------*/
 body,
@@ -158,7 +159,7 @@ a {
 
 .siteTitleWrapper {
   justify-content:flex-end;
-  background-color:#54140f;
+  background-color:floralwhite;
   box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.08);
   transition:all 200ms;
 
@@ -169,57 +170,58 @@ a {
 	color:rgba(255, 206, 77, 0.94);
 }
 
-.siteTitle > h2 {
-	color:rgba(255, 206, 77, 0.94);
-}
-
 .siteSubtitle {
   padding:3px 5px 3px 5px;
   justify-content:space-between;
+  align-items: center;
 }
 
 .siteSubtitle > p {
   text-transform:uppercase;
-  font-size:10px;
   letter-spacing:.5px;
-	color:rgba(255, 206, 77, 0.94);
 }
 
-.about:hover {
-  cursor:pointer;
-}
-
-.circle {
-  transition:all 200ms;
-  height:10vw;
-  width:10vw;
-  border-radius:100%;
-  background-color:#344c4c;
-  position:absolute;
-  justify-content:center;
-}
-
-.openAbout {
-  height:120vw;
-  width:120vw;
-  z-index:1;
-  margin-right:-30vw;
-  opacity:1;
-	transition:200ms;
-	box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.08);
-}
-
-.openAbout > button {
-  margin:10px;
+.about {
+  font-size: 12px;
+  color:#2a3030;
+  text-transform: capitalize;
+  font-weight:300;
+  background-color:transparent;
+  border:1px solid #344c4c;
 }
 
 .aboutText {
-  width:200px;
-  align-self:center;
+  position:absolute;
+  top:-2vw;
+  left:38vw;
+  transition:200ms all;
 }
 
-.aboutText > p{
-  color:white;
+.aboutText > div {
+  width:60vw;
+  height:50%;
+  overflow:scroll;
+  align-self:center;
+  background-color:floralwhite;
+  border-radius:5px;
+  box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.aboutText > div > p {
+  color:black;
+  font-size:11px;
+  line-height:1.2;
+  padding:5vw 1vw 2vw 1vw;
+}
+
+.aboutButton {
+	margin:5px;
+	box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.aboutClosed {
+  top:-60vw;
+  transition:200ms all;
 }
 
 .photoSlider {
@@ -228,6 +230,7 @@ a {
 	overflow: hidden;
 	height:70vw;
 	transition:200ms;
+	position:relative;
 }
 
 .smallPhotoSlider {
@@ -246,6 +249,28 @@ a {
 	filter: blur(4px);
 	transition:200ms;
 }
+
+.unsquishButton {
+	height:7vw;
+	width:7vw;
+	background-color:white;
+	z-index:10;
+	position:absolute;
+	top:1vw;
+	left:92vw;
+	border-radius:100%;
+	opacity: 0;
+}
+
+.lowOpacity {
+  opacity:0.5;
+}
+
+.unsquishButton > img {
+	width:103%;
+}
+
+
 /*---------------------Search Bar--------------------------*/
 
 
@@ -413,4 +438,32 @@ a {
 	background-color: white;
 	margin:0;
 	padding:0;
+}
+
+
+
+/*----------------------Some Behavior Items------------------------------*/
+/*----------------------alternate colors------------------------------*/
+.siteTitleWrapper {
+  background-color:transparent;
+}
+
+.siteWrapper {
+  background-color:floralwhite;
+}
+
+/*.siteTitle> h2 {
+  color:steelblue;
+}*/
+
+.siteSubtitle > p {
+  color:#2a3030;
+}
+
+.categoryWrapper {
+  background-color:floralwhite;
+}
+
+input, .searchButton, .dropdownWrapper  {
+  background-color:lightsteelblue;
 }

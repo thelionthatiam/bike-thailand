@@ -1,7 +1,11 @@
 /*---------------menu stuff---------------------*/
 
+// clickable items are variables
 var category = $('.categoryTitle');
 var article = $('.subCategoryTitle');
+var titleImg = $('.titleImg');
+var unsquishButton = $('.unsquishButton');
+
 
 function removeSelector(aClass) {
 	var arr = aClass.split('');
@@ -16,14 +20,16 @@ function slideDownNext(selected, highlightedClass, highlight) {
 }
 
 function squish() {
-	$('.titleImg').addClass('smallTitleImg');
+	titleImg.addClass('smallTitleImg');
 	$('.photoSlider').addClass('smallPhotoSlider');
+	$('.unsquishButton').addClass('lowOpacity');
 
 }
 
 function unsquish(){
-	$('.titleImg').removeClass('smallTitleImg');
+	titleImg.removeClass('smallTitleImg');
 	$('.photoSlider').removeClass('smallPhotoSlider');
+	$('.unsquishButton').removeClass('lowOpacity');
 }
 
 function oneOpen(selected, highlightedClass, highlight) {
@@ -39,6 +45,15 @@ function oneOpen(selected, highlightedClass, highlight) {
 		squish();
 	}
 }
+
+function revertAll() {
+	if (titleImg.hasClass('smallTitleImg')) {
+		$('.red').slideUp();
+		unsquish();
+	}
+}
+
+// I don't think this is working
 
 function windowPosition(selected) {
   $('html, body').animate({
@@ -61,10 +76,20 @@ article.click(function() {
 	oneOpen(selected, highlightedClass, highlight);
 });
 
+titleImg.click(function() {
+	revertAll();
+})
+
+unsquishButton.click(function() {
+	revertAll();
+})
+
 
 /*---------------about stuff---------------------*/
 var about = $('.about')
 
 about.click(function() {
-	$('.circle').toggleClass('none').toggleClass('openAbout');
+	revertAll();
+	$('.aboutText').toggleClass('aboutClosed');
+
 })

@@ -66,24 +66,32 @@ body {
 button {
   border: none;
   color:white;
-  background-color:#344c4c;
+  background-color:#2a3030;
   font-weight:500;
   font-size:12px;
   border-radius:5px;
 	box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 	align-self: center;
+  padding:5px;
+  margin:5px;
 }
 
 button:focus {
   outline:0;
 }
 
+.transparent {
+  background-color:transparent;
+  color:#2a3030;
+  border:1px solid #2a3030;
+}
+
 input {
 	border: none;
 	padding:2px;
-	color: white;
+	color: floralwhite;
 	font-size:12px;
-  background-color:#344c4c;
+  background-color:#2a3030;
   font-size:12px;
   border-radius:2px;
 }
@@ -93,26 +101,25 @@ input:focus {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	padding:2px;
+	padding:4px;
   color: white;
 	font-size:12px;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-	padding:2px;
+	padding:4px;
   color: white;
 	font-size:12px;
 }
 :-ms-input-placeholder { /* IE 10+ */
-	padding:2px;
+	padding:4px;
   color: white;
 	font-size:12px;
 }
 :-moz-placeholder { /* Firefox 18- */
-	padding:2px;
+	padding:4px;
   color: white;
 	font-size:12px;
 }
-
 
 .none {
   display:none;
@@ -129,6 +136,16 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 h2 {
   font-weight:600;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 p, li, a {
@@ -160,7 +177,7 @@ a {
 .siteTitleWrapper {
   justify-content:flex-end;
   background-color:floralwhite;
-  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px -5px 8px 0px rgba(0, 0, 0, .1);
   transition:all 200ms;
 
 }
@@ -174,20 +191,13 @@ a {
   padding:3px 5px 3px 5px;
   justify-content:space-between;
   align-items: center;
+  z-index: 100;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, .1);
 }
 
 .siteSubtitle > p {
   text-transform:uppercase;
   letter-spacing:.5px;
-}
-
-.about {
-  font-size: 12px;
-  color:#2a3030;
-  text-transform: capitalize;
-  font-weight:300;
-  background-color:transparent;
-  border:1px solid #344c4c;
 }
 
 .aboutText {
@@ -202,21 +212,16 @@ a {
   height:50%;
   overflow:scroll;
   align-self:center;
-  background-color:floralwhite;
+  background-color:#2a3030;
   border-radius:5px;
-  box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .aboutText > div > p {
-  color:black;
-  font-size:11px;
+  color:#fffcf7;
+  font-size:12px;
   line-height:1.2;
-  padding:5vw 1vw 2vw 1vw;
-}
-
-.aboutButton {
-	margin:5px;
-	box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
+  padding:5vw 4vw 4vw 4vw;
 }
 
 .aboutClosed {
@@ -282,25 +287,22 @@ a {
 }
 
 .dropdownWrapper {
-	margin:5px;
-	max-height:70px;
+	margin:5px 5px 15px 5px;
+	max-height:100px;
 	overflow:scroll;
-	border-radius:2px;
-	background-color:#344c4c;
+	border-radius:5px;
+  background-color:#2a3030;
 }
 
 .dropdownItem {
-	color:white;
-	margin-bottom:3px;
-	border-bottom:1px solid white;
+	/*color:white;*/
+	margin-bottom:4px;
+	/*border-bottom:1px solid #2a3030;*/
+  color:floralwhite;
 }
 
 .searchButton {
 	flex-grow:1;
-	color:white;
-	background-color:#344c4c;
-	padding:3px 0 3px 0;
-	margin:5px;
 }
 
 
@@ -315,7 +317,7 @@ a {
   justify-content:center;
   margin:5px 0 5px 0;
   background-color:#fcfa6a;
-  box-shadow: 10px 20px 20px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, .1);
 }
 
 .categoryWrapper:hover {
@@ -363,11 +365,11 @@ a {
   margin:20px;
   padding-top:3px;
   padding-bottom:3px;
-  border-bottom:solid 1px #6ea09f;
+  border-bottom:dotted 1px #2a3030;
   transition:all 100ms ease-in-out;
 }
 .subCategoryTitle:hover {
-  border-right: 20px solid #6ea09f;
+  /*border-right: 20px solid #2a3030;*/
   cursor:pointer;
 }
 
@@ -402,14 +404,13 @@ a {
 /*----------------------Article------------------------------*/
 
 .article {
-  padding:0px 25px 40px 25px;
+  padding: 0 35px 15px; 35px;
 }
-.article > h1 {
-	padding:30px 0px 5px 0px;
-}
+
 .article > p {
-  font-size:15px;
-  padding:5px 0px 5px 0px;
+  padding:5px;
+  border-left: 20px solid #F3D1AF;
+  margin-bottom:10px;
 }
 
 .articleActionBar {
@@ -452,10 +453,6 @@ a {
   background-color:floralwhite;
 }
 
-/*.siteTitle> h2 {
-  color:steelblue;
-}*/
-
 .siteSubtitle > p {
   color:#2a3030;
 }
@@ -464,6 +461,14 @@ a {
   background-color:floralwhite;
 }
 
-input, .searchButton, .dropdownWrapper  {
-  background-color:lightsteelblue;
+.categoryWrapper:hover {
+  background-color: #fffcf7;
+}
+
+.categoryTitle:hover {
+  border-bottom:2px solid #DAD6C4;
+}
+
+.subCategoryWrapper {
+  background-color:#FFFFFF;
 }

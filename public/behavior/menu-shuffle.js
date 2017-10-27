@@ -36,8 +36,9 @@ function oneOpen(selected, highlightedClass, highlight) {
 	if (selected.next().hasClass(highlight)) {
 		$(highlightedClass).slideUp().removeClass(highlight);
 		selected.next().removeClass(highlight);
-
-		unsquish();
+		if (selected.hasClass('categoryTitle')) { // more hardcoded step. not impressed with this
+			unsquish();
+		}
 	} else {
 		$(highlightedClass).slideUp().removeClass(highlight);
 		slideDownNext(selected, highlightedClass, highlight);
